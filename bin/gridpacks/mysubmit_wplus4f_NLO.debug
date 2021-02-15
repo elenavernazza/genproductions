@@ -1,0 +1,56 @@
+nohup: input ignorato
+# Sul branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modificato:   gridpack_generation.sh
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	WZeu_SM.log
+#	WZeu_SM/
+#	WZeu_SM_slc7_amd64_gcc700_CMSSW_10_6_0_tarball.tar.xz
+#	WZeu_SM_slc7_amd64_gcc820_CMSSW_10_2_13_tarball.tar.xz
+#	WZeu_is_SM.log
+#	WZeu_is_SM/
+#	cards/WZeu_SM/
+#	cards/WZeu_is_SM/
+#	cards/createCards_WZ.py
+#	cards/createCards_WZ_is.py
+#	cards/ew_wz_cW_run_card.dat
+#	mysubmit_wplus4f_NLO.debug
+#
+# It took 2.14 seconds to enumerate untracked files. 'status -uno'
+# may speed it up, but you have to be careful not to forget to add
+# new files yourself (see 'git help status').
+no changes added to commit (use "git add" and/or "git commit -a")
+Current git revision is:
+2d0a862deb28958a78d52afe8b5f70e81eeaa550
+diff --git a/bin/MadGraph5_aMCatNLO/gridpack_generation.sh b/bin/MadGraph5_aMCatNLO/gridpack_generation.sh
+index bbe9be0..51f2304 100755
+--- a/bin/MadGraph5_aMCatNLO/gridpack_generation.sh
++++ b/bin/MadGraph5_aMCatNLO/gridpack_generation.sh
+@@ -612,7 +612,7 @@ if [ -n "$5" ]
+   then
+     scram_arch=${5}
+   else
+-    scram_arch=slc6_amd64_gcc630 #slc6_amd64_gcc481
++    scram_arch=slc7_amd64_gcc700 #slc6_amd64_gcc481
+ fi
+ 
+ # Require OS and scram_arch to be consistent
+@@ -626,7 +626,7 @@ if [ -n "$6" ]
+   then
+     cmssw_version=${6}
+   else
+-    cmssw_version=CMSSW_9_3_16 #CMSSW_7_1_30
++    cmssw_version=CMSSW_10_6_0 #CMSSW_10_2_13 #CMSSW_7_1_30
+ fi
+  
+ # jobstep can be 'ALL','CODEGEN', 'INTEGRATE', 'MADSPIN'
+/afs/cern.ch/user/e/evernazz/public/genproductions/bin/MadGraph5_aMCatNLO
+Proxies are needed. Please execute the command below and submit your gridpack again:
+
+voms-proxy-init -voms cms -valid 192:00
